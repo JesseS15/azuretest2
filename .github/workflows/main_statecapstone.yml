@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'STaTECapstone'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_710880FAEC744308B91E32F897F57355 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33B94D18029B4F539000D788BB110CBB }}
