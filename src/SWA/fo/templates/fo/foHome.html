@@ -1,0 +1,20 @@
+
+{% extends "fo/foNavigate.html" %}
+{% block start %}
+{% if flightOperator.user.is_authenticated %}
+
+<center>
+  <ul style="list-style-type:none;padding: 0">
+    {% for sim in flightOperator.sim_list.all %}
+
+    <li><a href="{% url 'fo:sim' sim %}">{{ sim }}</a></li>
+
+    {% endfor %}
+  </ul>
+</center>
+
+{% else %}
+<p>here</p>
+  <meta http-equiv = "refresh" content = "0; url = /fo" />
+{% endif %}
+{% endblock start %}
